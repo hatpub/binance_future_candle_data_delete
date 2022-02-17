@@ -8,11 +8,11 @@ from data_config import *
 def exec_cron():
 
     db = pymysql.connect(
-        host='192.168.0.112',
-        user='sslee',
-        password='rhddbtjqj',
+        host=host,
+        user=user,
+        password=password,
         charset='utf8mb4',
-        database='sslee_DB'
+        database=database
     )
 
     now = datetime.now()
